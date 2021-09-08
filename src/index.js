@@ -1,14 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {GlobalStyle} from "./styles/base";
+import {BrowserRouter as Router, Route, Redirect} from "react-router-dom";
+import {routerConfigs} from '../src/router/config'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <GlobalStyle/>
+        <Router>
+            <Route exact path='/' render={() => <Redirect to='/login'/>}/>
+            {routerConfigs.map((route, index) =>
+                <Route key={index} path={route.path} component={route.component}/>
+            )}
+        </Router>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
