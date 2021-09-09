@@ -1,5 +1,8 @@
 import { Form, Input, Button } from "antd";
 import styled from 'styled-components'
+import { useHistory } from "react-router-dom";
+
+
 const FormWrapper = styled(Form)`
     margin-top: 104px;
 `
@@ -29,14 +32,33 @@ const FormWrapperInput = styled(Form.Item)`
         cursor: pointer;
         color: #FFFFFF;
     }
+    .register-link {
+        display: inline-block;
+        margin-top: 10px;
+        width:100%;
+        text-align: right;
+        color: #5080f5;
+        font-size: 22px;
+        transform: scale(0.5);
+        cursor: pointer;
+    }
 `
 
 
 function LoginForm() {
+    let history = useHistory();
+    function onFinish(values) {
+
+    }
+    // 跳转到注册页面
+    function goRegister() {
+        history.push("/register")
+    }
     return(
         <FormWrapper
             name="login-form"
-            initialValues={{ remember: true }}>
+            initialValues={{ remember: true }}
+            onFinish={onFinish}>
             <FormWrapperInput
                 name="username"
                 rules={[{ required: true, message: '请输入用户名!' }]}>
@@ -48,9 +70,10 @@ function LoginForm() {
                 <Input type="password" placeholder="请输入用户密码" id='pwd'/>
             </FormWrapperInput>
             <FormWrapperInput>
-                <Button type="primary" htmlType="submit" id="login-form-button">
+                <Button type="primary" htmlType="submit" className="login-form-button">
                    登录
                 </Button>
+                <span onClick={goRegister} className="register-link">快速注册</span>
             </FormWrapperInput>
         </FormWrapper>
     )

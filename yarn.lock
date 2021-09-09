@@ -1621,7 +1621,7 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@sinonjs/commons@^1.7.0":
+"@sinonjs/commons@^1.6.0", "@sinonjs/commons@^1.7.0", "@sinonjs/commons@^1.8.3":
   version "1.8.3"
   resolved "https://registry.npm.taobao.org/@sinonjs/commons/download/@sinonjs/commons-1.8.3.tgz?cache=0&sync_timestamp=1617868496285&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40sinonjs%2Fcommons%2Fdownload%2F%40sinonjs%2Fcommons-1.8.3.tgz#3802ddd21a50a949b6721ddd72da36e67e7f1b2d"
   integrity sha1-OALd0hpQqUm2ch3dcto25n5/Gy0=
@@ -1634,6 +1634,27 @@
   integrity sha1-KTZ0/MsyYqx4LHqt/eyoaxDHXEA=
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@sinonjs/fake-timers@^7.0.4", "@sinonjs/fake-timers@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.nlark.com/@sinonjs/fake-timers/download/@sinonjs/fake-timers-7.1.2.tgz?cache=0&sync_timestamp=1622212511786&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40sinonjs%2Ffake-timers%2Fdownload%2F%40sinonjs%2Ffake-timers-7.1.2.tgz#2524eae70c4910edccf99b2f4e6efc5894aff7b5"
+  integrity sha1-JSTq5wxJEO3M+ZsvTm78WJSv97U=
+  dependencies:
+    "@sinonjs/commons" "^1.7.0"
+
+"@sinonjs/samsam@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.nlark.com/@sinonjs/samsam/download/@sinonjs/samsam-6.0.2.tgz#a0117d823260f282c04bff5f8704bdc2ac6910bb"
+  integrity sha1-oBF9gjJg8oLAS/9fhwS9wqxpELs=
+  dependencies:
+    "@sinonjs/commons" "^1.6.0"
+    lodash.get "^4.4.2"
+    type-detect "^4.0.8"
+
+"@sinonjs/text-encoding@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.npm.taobao.org/@sinonjs/text-encoding/download/@sinonjs/text-encoding-0.7.1.tgz#8da5c6530915653f3a1f38fd5f101d8c3f8079c5"
+  integrity sha1-jaXGUwkVZT86Hzj9XxAdjD+AecU=
 
 "@surma/rollup-plugin-off-main-thread@^1.1.1":
   version "1.4.2"
@@ -2808,6 +2829,13 @@ axe-core@^4.0.2:
   version "4.3.3"
   resolved "https://registry.nlark.com/axe-core/download/axe-core-4.3.3.tgz#b55cd8e8ddf659fe89b064680e1c6a4dceab0325"
   integrity sha1-tVzY6N32Wf6JsGRoDhxqTc6rAyU=
+
+axios@^0.21.4:
+  version "0.21.4"
+  resolved "https://registry.nlark.com/axios/download/axios-0.21.4.tgz?cache=0&sync_timestamp=1630942656836&other_urls=https%3A%2F%2Fregistry.nlark.com%2Faxios%2Fdownload%2Faxios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha1-xnuQ3AVo5cHPKwuFjEO6KOLtpXU=
+  dependencies:
+    follow-redirects "^1.14.0"
 
 axobject-query@^2.2.0:
   version "2.2.0"
@@ -4513,6 +4541,11 @@ diff-sequences@^27.0.6:
   resolved "https://registry.nlark.com/diff-sequences/download/diff-sequences-27.0.6.tgz#3305cb2e55a033924054695cc66019fd7f8e5723"
   integrity sha1-MwXLLlWgM5JAVGlcxmAZ/X+OVyM=
 
+diff@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npm.taobao.org/diff/download/diff-5.0.0.tgz#7ed6ad76d859d030787ec35855f5b1daf31d852b"
+  integrity sha1-ftatdthZ0DB4fsNYVfWx2vMdhSs=
+
 diffie-hellman@^5.0.0:
   version "5.0.3"
   resolved "https://registry.npm.taobao.org/diffie-hellman/download/diffie-hellman-5.0.3.tgz#40e8ee98f55a2149607146921c63e1ae5f3d2875"
@@ -5560,7 +5593,7 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.14.0:
   version "1.14.3"
   resolved "https://registry.nlark.com/follow-redirects/download/follow-redirects-1.14.3.tgz#6ada78118d8d24caee595595accdc0ac6abd022e"
   integrity sha1-atp4EY2NJMruWVWVrM3ArGq9Ai4=
@@ -7493,6 +7526,11 @@ jsprim@^1.2.2:
     array-includes "^3.1.2"
     object.assign "^4.1.2"
 
+just-extend@^4.0.2:
+  version "4.2.1"
+  resolved "https://registry.npm.taobao.org/just-extend/download/just-extend-4.2.1.tgz#ef5e589afb61e5d66b24eca749409a8939a8c744"
+  integrity sha1-715Ymvth5dZrJOynSUCaiTmox0Q=
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.nlark.com/killable/download/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
@@ -7667,6 +7705,11 @@ lodash.flattendeep@^4.4.0:
   version "4.4.0"
   resolved "https://registry.npm.taobao.org/lodash.flattendeep/download/lodash.flattendeep-4.4.0.tgz#fb030917f86a3134e5bc9bec0d69e0013ddfedb2"
   integrity sha1-+wMJF/hqMTTlvJvsDWngAT3f7bI=
+
+lodash.get@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.nlark.com/lodash.get/download/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
 
 lodash.isequal@^4.5.0:
   version "4.5.0"
@@ -8196,6 +8239,17 @@ nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.npm.taobao.org/nice-try/download/nice-try-1.0.5.tgz?cache=0&sync_timestamp=1614510039289&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnice-try%2Fdownload%2Fnice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha1-ozeKdpbOfSI+iPybdkvX7xCJ42Y=
+
+nise@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.nlark.com/nise/download/nise-5.1.0.tgz?cache=0&sync_timestamp=1621922200585&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fnise%2Fdownload%2Fnise-5.1.0.tgz#713ef3ed138252daef20ec035ab62b7a28be645c"
+  integrity sha1-cT7z7ROCUtrvIOwDWrYreii+ZFw=
+  dependencies:
+    "@sinonjs/commons" "^1.7.0"
+    "@sinonjs/fake-timers" "^7.0.4"
+    "@sinonjs/text-encoding" "^0.7.1"
+    just-extend "^4.0.2"
+    path-to-regexp "^1.7.0"
 
 no-case@^3.0.4:
   version "3.0.4"
@@ -11231,6 +11285,18 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
+sinon@^11.1.2:
+  version "11.1.2"
+  resolved "https://registry.nlark.com/sinon/download/sinon-11.1.2.tgz?cache=0&sync_timestamp=1627389700168&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fsinon%2Fdownload%2Fsinon-11.1.2.tgz#9e78850c747241d5c59d1614d8f9cbe8840e8674"
+  integrity sha1-nniFDHRyQdXFnRYU2PnL6IQOhnQ=
+  dependencies:
+    "@sinonjs/commons" "^1.8.3"
+    "@sinonjs/fake-timers" "^7.1.2"
+    "@sinonjs/samsam" "^6.0.2"
+    diff "^5.0.0"
+    nise "^5.1.0"
+    supports-color "^7.2.0"
+
 sisteransi@^1.0.5:
   version "1.0.5"
   resolved "https://registry.nlark.com/sisteransi/download/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
@@ -11781,7 +11847,7 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-supports-color@^7.0.0, supports-color@^7.1.0:
+supports-color@^7.0.0, supports-color@^7.1.0, supports-color@^7.2.0:
   version "7.2.0"
   resolved "https://registry.nlark.com/supports-color/download/supports-color-7.2.0.tgz?cache=0&sync_timestamp=1626703400240&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fsupports-color%2Fdownload%2Fsupports-color-7.2.0.tgz#1b7dcdcb32b8138801b3e478ba6a51caa89648da"
   integrity sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=
@@ -12139,7 +12205,7 @@ type-check@~0.3.2:
   dependencies:
     prelude-ls "~1.1.2"
 
-type-detect@4.0.8:
+type-detect@4.0.8, type-detect@^4.0.8:
   version "4.0.8"
   resolved "https://registry.npm.taobao.org/type-detect/download/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
   integrity sha1-dkb7XxiHHPu3dJ5pvTmmOI63RQw=

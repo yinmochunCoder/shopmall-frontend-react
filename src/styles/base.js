@@ -39,10 +39,11 @@ export const GlobalStyle = createGlobalStyle`
       padding: 0;
       outline: none
     }
-    #root {
+    #root, .root {
         height: 100%;
         min-width: 1064px;
     }
+    
     .fl { float: left }
     
     .fr { float: right }

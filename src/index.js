@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Route, Redirect} from "react-router-dom";
 import {routerConfigs} from '../src/router/config'
 
 ReactDOM.render(
-    <React.StrictMode>
+    <div className='root'>
         <GlobalStyle/>
         <Router>
             <Route exact path='/' render={() => <Redirect to='/login'/>}/>
@@ -15,7 +15,7 @@ ReactDOM.render(
                 <Route key={index} path={route.path} component={route.component}/>
             )}
         </Router>
-    </React.StrictMode>,
+    </div>,
     document.getElementById('root')
 );
 
