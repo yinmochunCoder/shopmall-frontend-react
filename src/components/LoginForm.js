@@ -1,6 +1,7 @@
 import { Form, Input, Button } from "antd";
 import styled from 'styled-components'
 import { useHistory } from "react-router-dom";
+import {login} from '../api/login-api'
 
 
 const FormWrapper = styled(Form)`
@@ -47,8 +48,12 @@ const FormWrapperInput = styled(Form.Item)`
 
 function LoginForm() {
     let history = useHistory();
-    function onFinish(values) {
-
+    async function onFinish(values) {
+        let params = {
+            ...values
+        }
+        let res = await login(params)
+        console.log(res)
     }
     // 跳转到注册页面
     function goRegister() {

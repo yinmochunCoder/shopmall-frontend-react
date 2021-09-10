@@ -1,5 +1,4 @@
 import {setUpMedia} from './matchMedia.mock'
-import { screen } from '@testing-library/react';
 import Login from '../views/Login';
 import LoginForm from '../components/LoginForm'
 import Enzyme from './enzyme.cfg'

@@ -20,6 +20,7 @@ export const LoginWrapper = styled.div`
             >img {
                 width: 100%;
                 height: 100%;
+                border-radius: 20px 0 0 20px;
             }
         }
         .right-wrapper {

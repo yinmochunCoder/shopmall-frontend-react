@@ -1,6 +1,18 @@
+import {RegisterWrapper, RegisterForm} from "../styles/register";
 function Register() {
+    function onFinish() {
+
+    }
+
+
     return(
-        <div>注册页面</div>
+        <RegisterWrapper>
+            <RegisterForm
+                name='register'
+                onFinish={onFinish}
+            >
+            </RegisterForm>
+        </RegisterWrapper>
     )
 }
 export default Register
